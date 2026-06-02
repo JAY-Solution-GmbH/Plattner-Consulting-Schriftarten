@@ -22,32 +22,24 @@ Fügen Sie im Einstellungsbereich Ihres onepage.io-Projekts unter **„Custom Co
 ```
 
 ### Schritt 2: Schriftarten im CSS anwenden
-Da onepage.io häufig verschachtelte Tags (wie `<span>` innerhalb von Überschriften) verwendet, müssen die CSS-Regeln robust geschrieben sein, damit globale Text-Styles nicht die Überschriften überschreiben.
+Mit folgendem CSS-Code definieren wir **Futura Book** als Standard-Schriftart für alle Elemente der Seite (einschließlich aller Paragraphen, Listen, Span-Tags und Divs). Anschließend überschreiben wir diese gezielt für **H1, H2 und H3 Überschriften** (inklusive ihrer verschachtelten Elemente), damit diese in **Owners Bold** dargestellt werden.
 
 Verwenden Sie dazu folgende CSS-Definitionen:
 
-#### 1. Für Überschriften (Owners Bold):
-Dieser Selektor stellt sicher, dass alle Überschriften (inklusive eventueller innerer `<span>`-Elemente) korrekt mit Owners Bold dargestellt werden.
 ```css
-h1, h2, h3, h4, h5, h6,
-h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+/* 1. Futura Book für absolut alle Elemente auf der Seite festlegen */
+* {
+  font-family: 'Futura Book', sans-serif !important;
+}
+
+/* 2. H1, H2 und H3 Überschriften (und alle Elemente darin) auf Owners Bold setzen */
+h1, h2, h3,
+h1 *, h2 *, h3 * {
   font-family: 'Owners Bold', sans-serif !important;
   font-weight: bold !important;
 }
-```
 
-#### 2. Für Fließtext (Futura Book):
-Wendet Futura Book auf allen Fließtext an, schließt aber Überschriften und deren Kinder explizit aus.
-```css
-body, p, li, a, .op-text, .op-paragraph,
-span:not(h1 *, h2 *, h3 *, h4 *, h5 *, h6 *) {
-  font-family: 'Futura Book', sans-serif !important;
-}
-```
-
-#### 3. Für kondensierte Akzente (Futura Condensed Medium):
-Wird für gezielte Textelemente verwendet, z. B. über eine eigene Klasse.
-```css
+/* 3. Optionale Klasse für Futura Condensed Medium */
 .schmale-ueberschrift, .schmale-ueberschrift * {
   font-family: 'Futura Condensed Medium', sans-serif !important;
 }
