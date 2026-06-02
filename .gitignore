@@ -1,0 +1,7 @@
+# Ignore original unorganized files in root
+/Futura Book.otf
+/Futura Condensed Medium.ttf
+/Owners Bold.ttf
+
+# System files
+.DS_Store

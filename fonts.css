@@ -1,0 +1,31 @@
+/* 
+  Plattner Consulting Schriftarten 
+  Bereitgestellt über JAY-Solution-GmbH / jsDelivr CDN
+*/
+
+/* 1. Futura Book (OTF) */
+@font-face {
+  font-family: 'Futura Book';
+  src: url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/futura-book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Futura Condensed Medium (TTF) */
+@font-face {
+  font-family: 'Futura Condensed Medium';
+  src: url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/futura-condensed-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 3. Owners Bold (TTF) */
+@font-face {
+  font-family: 'Owners Bold';
+  src: url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/owners-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
