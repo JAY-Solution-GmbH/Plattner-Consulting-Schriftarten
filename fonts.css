@@ -3,28 +3,34 @@
   Bereitgestellt über JAY-Solution-GmbH / jsDelivr CDN
 */
 
-/* 1. Futura Book (OTF) */
+/* 1. Futura Book (OTF & WOFF2) */
 @font-face {
   font-family: 'Futura Book';
-  src: url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/futura-book.otf') format('opentype');
+  src: local('Futura Book'), local('FuturaBT-Book'),
+       url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/futura-book.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/futura-book.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-/* 2. Futura Condensed Medium (TTF) */
+/* 2. Futura Condensed Medium (TTF & WOFF2) */
 @font-face {
   font-family: 'Futura Condensed Medium';
-  src: url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/futura-condensed-medium.ttf') format('truetype');
+  src: local('Futura Condensed'), local('Futura-Condensed'),
+       url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/futura-condensed-medium.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/futura-condensed-medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
-/* 3. Owners Bold (TTF) */
+/* 3. Owners Bold (TTF & WOFF2) */
 @font-face {
   font-family: 'Owners Bold';
-  src: url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/owners-bold.ttf') format('truetype');
+  src: local('Owners Text Bold'), local('OwnersText-Bold'),
+       url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/owners-bold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/JAY-Solution-GmbH/Plattner-Consulting-Schriftarten@main/fonts/owners-bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
